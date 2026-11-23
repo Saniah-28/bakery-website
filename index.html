@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Bakery Stall: fresh buns, khatai, cookies and cakes made in small batches every day.">
+  <title>Bakery Stall</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥐</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="bar">
+  <h1 class="brand">Bakery Stall</h1>
+  <nav class="nav" aria-label="Main">
+    <a href="#menu-section">Menu</a>
+    <a href="#prices">Prices</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" aria-labelledby="hero-title">
+    <svg class="bun-art" viewBox="0 0 96 70" aria-hidden="true"><path d="M10 40 Q10 10 48 10 Q86 10 86 40 Z" fill="#ffe9a3" stroke="#3b2f2f" stroke-width="2.5" stroke-linejoin="round"/><path d="M6 40 H90 Q90 50 48 50 Q6 50 6 40 Z" fill="#f5c46b" stroke="#3b2f2f" stroke-width="2.5" stroke-linejoin="round"/><path d="M30 24 q4 -6 8 0 M50 22 q4 -6 8 0" fill="none" stroke="#c98a3b" stroke-width="2" stroke-linecap="round"/></svg>
+    <svg class="star-art" viewBox="0 0 60 60" aria-hidden="true"><path d="M30 6 L34 24 L52 26 L36 34 L44 52 L30 40 L16 52 L24 34 L8 26 L26 24 Z" fill="#ffe9a3" stroke="#3b2f2f" stroke-width="2" stroke-linejoin="round"/></svg>
+    <svg class="sprinkle-art" viewBox="0 0 80 60" aria-hidden="true"><path d="M10 14 l8 -4 M30 10 l6 8 M50 18 l8 -2 M18 34 l-6 6 M44 38 l8 -6 M62 40 l6 6 M26 52 l8 -2" stroke="#f48fb1" stroke-width="3" stroke-linecap="round"/><path d="M58 8 l6 0 M66 26 l0 6" stroke="#a8e6cf" stroke-width="3" stroke-linecap="round"/></svg>
+    <span class="eyebrow">Baked fresh this morning</span>
+    <h2 class="headline" id="hero-title">Warm bakes, <em>sweet</em> little treats</h2>
+    <p class="lead">Buns, khatai, cookies and cakes made in small batches every day. Pick your favourites and grab them while they're warm.</p>
+    <a class="cta" href="#menu-section">See the menu</a>
+    <a class="cta-alt" href="#contact">Find us</a>
+  </section>
+
+  <svg class="doodle d3" viewBox="0 0 60 60" aria-hidden="true"><path d="M30 6 L34 24 L52 26 L36 34 L44 52 L30 40 L16 52 L24 34 L8 26 L26 24 Z" fill="none" stroke="#3b2f2f" stroke-width="2" stroke-linejoin="round"/></svg>
+
+  <section class="card" aria-labelledby="sales-title">
+    <svg class="doodle d1" viewBox="0 0 70 50" aria-hidden="true"><path d="M8 30 q8 -18 18 0 t18 0 t18 0" fill="none" stroke="#f48fb1" stroke-width="3" stroke-linecap="round"/><circle cx="58" cy="12" r="4" fill="#ffe9a3" stroke="#3b2f2f" stroke-width="1.5"/></svg>
+    <h2 id="sales-title">Today's Sales</h2>
+    <div class="summary">
+      <div class="stat">
+        <div class="label">Items sold</div>
+        <div class="value" id="totalItems">0</div>
+      </div>
+      <div class="stat">
+        <div class="label">Revenue</div>
+        <div class="value" id="totalRevenue">Rs 0</div>
+      </div>
+    </div>
+    <div class="actions">
+      <button id="undoBtn">Undo last sale</button>
+      <button id="resetBtn">Reset day</button>
+    </div>
+  </section>
+
+  <section class="card" id="menu-section" aria-labelledby="menu-title">
+    <svg class="doodle d2" viewBox="0 0 90 40" aria-hidden="true"><path d="M4 20 Q14 4 24 20 T44 20 T64 20 T84 20" fill="none" stroke="#a8e6cf" stroke-width="4" stroke-linecap="round"/></svg>
+    <h2 id="menu-title">Menu</h2>
+    <div class="menu-grid" id="menu"></div>
+  </section>
+
+  <section class="card" id="prices" aria-labelledby="prices-title">
+    <h2 id="prices-title">Prices</h2>
+    <ul class="price-list">
+      <li><span>Plain Bun</span><span>Rs 40</span></li>
+      <li><span>Khatai (pack of 4)</span><span>Rs 120</span></li>
+      <li><span>Rusk (pack)</span><span>Rs 150</span></li>
+      <li><span>Chocolate Cookie</span><span>Rs 60</span></li>
+      <li><span>Cupcake</span><span>Rs 100</span></li>
+      <li><span>Cake Slice</span><span>Rs 180</span></li>
+      <li><span>Chicken Patty</span><span>Rs 90</span></li>
+      <li><span>Mini Pizza Puff</span><span>Rs 130</span></li>
+    </ul>
+  </section>
+
+  <section class="card contact" id="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title">Contact Us</h2>
+    <p>Phone: [add your number]</p>
+    <p>WhatsApp: [add your number]</p>
+    <p>Location: [add stall address]</p>
+    <p>Hours: [add opening hours]</p>
+  </section>
+</main>
+
+<footer class="bar footer">
+  Sales save on this device and reset every new day
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
